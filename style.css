@@ -20,7 +20,9 @@ body{
 .navbar__logo{
   width: 100%;
 }
-
+.hero__container{
+  position: relative;
+}
 .nav__item{
   background-image: linear-gradient(
     to right,
@@ -39,18 +41,77 @@ body{
   border: 2px solid blue ;
 }
 
+.hero__image__container{
+  width: 100%;
+  
+
+}
+.hero__image{
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+}
+.container{
+   max-width: 100%;
+   padding: 0 20px;
+   margin: 0 auto;
+}
+
+.button__primary{
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+  );
+  color: #ffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  
+}
+.hero__text{
+  font-size: 30px;
+  margin: 20px 0;
+}
 @media(min-width:768px){
   .navbar{
     justify-content: space-between;
     padding: 2px 25px;
   }
+  .hero__container{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 20px;
+  }
 }
  @media(min-width:1020px){
+   .container{
+     width: 900px;
+     
+   }
   .navbar__brand{
     width: 150px;
   } 
   .nav__item{
     padding: 15px;
     font-size: 20px;
+  }
+  .button__primary{
+    padding: 15px;
+    font-size: 20px;
+  }
+  .hero__description{
+    width: 100%;
+  }
+  .hero__text{
+    font-size: 50px;
+  }
+}
+@media(min-width: 1400px){
+  .container{
+    width: 1250px;
   }
 }
